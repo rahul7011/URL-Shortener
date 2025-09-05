@@ -71,13 +71,25 @@ Copy this token and set it as the value for `ELASTIC_TOKEN` in your `.env` file.
 ```sh
 docker-compose up --build
 ```
-
 - FastAPI: [http://localhost:8000](http://localhost:8000)
 - FastAPI Swagger: [http://localhost:8000/docs](http://localhost:8000/docs)
 - MongoDB: `localhost:27017`
 - Redis: `localhost:6379`
 - Elasticsearch: `localhost:9200`
 - Kibana: [http://localhost:5601](http://localhost:5601)
+
+## Importing Kibana Dashboards
+
+This project includes pre-built Kibana dashboards for monitoring the URL Shortener service. To import them into your local Kibana instance:
+
+1. **Start the stack** using Docker Compose as described above.
+2. In Kibana, navigate to **Stack Management → Saved Objects → Import**.
+3. Upload the file located at `kibana/dashboards/urlshortener-dashboards.ndjson`.
+4. Once imported, access the dashboards from the **Dashboard** section in Kibana.
+
+> **Note:** The dashboards are not automatically available when you clone the repository, as they are stored separately from the codebase. You need to import them manually as described above.
+
+
 
 ### 4. API Endpoints
 
