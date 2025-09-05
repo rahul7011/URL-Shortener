@@ -36,8 +36,8 @@ This project was designed as a **learning + portfolio project** to demonstrate b
 ### 1. Clone the Repository
 
 ```sh
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/rahul7011/URL-Shortener
+cd URL-Shortener
 ```
 
 ### 2. Environment Variables
@@ -163,9 +163,59 @@ README.md
 
 ---
 
+## 📸 Screenshots
+
+### Infrastructure & Setup
+<div align="center">
+  <img width="90%" alt="Containerized setup with FastAPI, MongoDB, Redis, Elasticsearch, and Kibana running via Docker Compose" src="https://github.com/user-attachments/assets/c96c05c6-0802-4d06-926a-7b9041d6b26d" />
+  <p><em>Dockerized microservices architecture with all dependencies containerized</em></p>
+</div>
+
+### Analytics Dashboard
+<div align="center">
+  <img width="90%" alt="Analytics API showing total click count and last accessed timestamp for a short URL" src="https://github.com/user-attachments/assets/cde683c8-a264-40c8-9a97-814cda58fcaf" />
+  <p><em>Detailed analytics for individual short URLs with click statistics</em></p>
+</div>
+
+### Leaderboards
+<div align="center">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="flex: 1; min-width: 300px;">
+      <img width="100%" alt="Global leaderboard ranking domains by total clicks" src="https://github.com/user-attachments/assets/205b6b1e-5560-47e6-8a5f-bc956793b851" />
+      <p><em>Global leaderboard (Redis Sorted Set) tracking all-time top domains</em></p>
+    </div>
+    <div style="flex: 1; min-width: 300px;">
+      <img width="100%" alt="Daily leaderboard for trending domains" src="https://github.com/user-attachments/assets/8d2b2f8e-f822-4575-be7e-9061a84e0205" />
+      <p><em>Daily trending leaderboard (auto-expiring Redis Sorted Set)</em></p>
+    </div>
+  </div>
+</div>
+
+### Search Functionality
+<div align="center">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="flex: 1; min-width: 300px;">
+      <img width="100%" alt="Exact short ID match in Elasticsearch" src="https://github.com/user-attachments/assets/92f83514-347a-4d8a-b158-5513755cfcad" />
+      <p><em>Precise search results for short URL identifiers</em></p>
+    </div>
+    <div style="flex: 1; min-width: 300px;">
+      <img width="100%" alt="Fuzzy search for original URLs" src="https://github.com/user-attachments/assets/676556d8-1f65-4d7a-9da0-c211e9096b91" />
+      <p><em>Fuzzy search capabilities for original URLs</em></p>
+    </div>
+  </div>
+</div>
+
+### Data Visualization
+<div align="center">
+  <img width="90%" alt="Kibana analytics dashboard showing top domains and click trends" src="https://github.com/user-attachments/assets/47628057-6859-43e3-a824-67597ba7729f" />
+  <p><em>Interactive Kibana dashboard visualizing top domains and temporal click patterns</em></p>
+</div>
+
+---
+
 ## License
 
-MIT (or your preferred license)
+MIT
 
 ---
 
